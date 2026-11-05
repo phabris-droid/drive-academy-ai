@@ -1,0 +1,395 @@
+DRIVE ACADEMY AI
+CAHIER DES CHARGES GLOBAL DÉTAILLÉ — VERSION 3.0
+
+Référence de conception • 5 novembre 2026 • Marché initial : Côte d’Ivoire
+
+DOCUMENT DE CADRAGE — Hypothèses commerciales et techniques à confirmer avant engagement
+contractuel.
+
+
+
+Mention fondamentale et obligatoire
+DRIVE ACADEMY AI est une plateforme numérique complémentaire d’apprentissage du Code de la
+route, de sensibilisation à la sécurité routière, de simulation et de mise en relation avec des
+professionnels habilités. DRIVE ACADEMY AI NE SE SUBSTITUE PAS À UNE AUTO-ÉCOLE AGRÉÉE.
+Les cours pratiques sont dispensés par les professionnels ou établissements responsables et
+autorisés à les proposer. Les examens blancs et simulations ne constituent ni un permis ni une
+certification officielle.
+
+
+
+1. Synthèse exécutive et périmètre
+Mission : accompagner les débutants, candidats au permis, conducteurs en remise à niveau et
+professionnels, depuis la théorie jusqu’à la réservation d’une formation pratique auprès d’un
+prestataire habilité. Positionnement : académie numérique et place de marché de services, non auto-
+école.
+
+    Module                           Finalité                           Phase
+
+    DRIVE LEARN                      Cours, panneaux, quiz,             MVP
+                                     examens blancs
+    DRIVE CONNECT                    Profils vérifiés, recherche,       MVP réglementaire
+                                     réservation, paiement
+    DRIVE PARTNERS                   Gestion auto-écoles et             MVP
+                                     moniteurs
+    DRIVE ADMIN                      Conformité, supervision,           MVP
+                                     litiges
+    DRIVE SIM                        Scénarios 2D puis simulateur       2D V1 / 3D ultérieur
+                                     3D
+    DRIVE COACH                      Tutorat IA, recommandations        V1
+    Entreprise                       Parcours flottes et rapports       V2
+
+
+
+
+2. Objectifs et indicateurs de succès
+     Objectifs : pédagogie fiable, accès simple sur Android, mise en relation transparente, confiance
+      et sécurité des séances.
+     KPIs : activation, progression pédagogique, taux de réussite aux quiz, rétention J7/J30,
+      conversion payante, taux de réservation aboutie, annulations, litiges, délai de vérification des
+      moniteurs, disponibilité technique.
+
+
+
+                  DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+     Cibles chiffrées à fixer après pilote ; aucune performance d’apprentissage ni réussite à l’examen
+      n’est garantie.
+
+
+
+3. Profils et gestion des droits
+    Rôle                                                Permissions principales
+
+    Visiteur                                            Consulter pages publiques et offre
+    Apprenant                                           Étudier, passer examens blancs, réserver,
+                                                        payer, noter après séance
+    Moniteur                                            Déposer justificatifs, configurer services,
+                                                        disponibilités, consulter ses réservations
+    Gestionnaire auto-école                             Valider rattachements, administrer moniteurs
+                                                        et véhicules de son établissement
+    Entreprise                                          Attribuer formations et voir indicateurs
+                                                        autorisés
+    Agent conformité                                    Contrôler dossiers et incidents selon
+                                                        habilitations
+    Administrateur                                      Gérer contenus, rôles, paramètres, audit et
+                                                        support
+
+Un compte peut avoir plusieurs rôles, mais les autorisations et données restent cloisonnées.
+Authentification par e-mail/téléphone ; vérification renforcée pour professionnels et
+administrateurs ; suppression/export de données selon obligations applicables.
+
+
+
+4. DRIVE LEARN — exigences pédagogiques
+     Catalogue versionné par pays : panneaux, marquages, priorités, intersections, feux, vitesses,
+      dépassements, arrêt/stationnement, conduite de nuit, usagers vulnérables, sécurité, entretien et
+      premiers secours.
+     Leçon : objectif, prérequis, durée estimée, contenu texte/audio/illustration, exercice, correction
+      explicative, source réglementaire et date de validation.
+     Panneaux : recherche, filtres, illustration, sens, cas d’usage et erreurs fréquentes.
+      Reconnaissance photo éventuelle avec avertissement sur les limites.
+     Quiz : tirage par thèmes/difficulté, correction, historique, répétition espacée, accessibilité,
+      reprise hors ligne si contenus synchronisés.
+     Examens blancs : paramètres configurables par pays après vérification des règles officielles ;
+      aucun usage abusif de la mention « examen officiel ».
+     Progression : compétences, tentatives, erreurs récurrentes, objectifs hebdomadaires et
+      recommandations.
+
+
+
+5. DRIVE SIM — situations et conduite simulée
+     MVP : scènes interactives 2D de priorités, ronds-points, passages piétons, feux, insertion,
+      dépassement et visibilité.
+     Chaque scénario définit environnement, acteurs, événements, options/actions, règle applicable,
+      résultat attendu, pénalités et explication.
+     Moteur déterministe pour l’évaluation ; l’IA ne décide pas seule de la légalité d’une manœuvre.
+
+
+                   DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+   Phase 3D : commandes virtuelles, circulation, météo, nuit, collisions, score, relecture des erreurs
+    ; prototype de performance préalable sur Android d’entrée/milieu de gamme.
+   Le simulateur est pédagogique et ne remplace jamais les leçons réelles ni les conditions
+    réglementaires de formation.
+
+
+
+6. DRIVE COACH — IA pédagogique et gouvernance
+   Assistant question-réponse fondé sur un corpus réglementaire validé et daté, avec référence de
+    la source et pays applicable.
+   Suggestions de révision à partir de compétences faibles et comptes rendus de simulation ; voix
+    facultative.
+   Agents spécialisés : tuteur, planificateur pédagogique, veille réglementaire, qualité des contenus,
+    support et analyse agrégée.
+   Toute modification réglementaire, correction de référence ou publication de nouveau contenu
+    nécessite revue humaine.
+   Garde-fous : refus des instructions dangereuses, limites de coût et fréquence, journalisation,
+    contrôle de qualité, consentement et minimisation des données.
+
+
+
+7. DRIVE CONNECT — modèle retenu
+Deux catégories : (1) moniteurs rattachés à une auto-école agréée ; (2) moniteurs indépendants dont
+l’habilitation à enseigner contre rémunération est démontrée selon le droit local. Les indépendants
+peuvent déposer un dossier, mais leur profil et leurs prestations restent non publiés tant que
+l’éligibilité n’est pas confirmée.
+
+7.1 Fiche moniteur et moteur de recherche
+   Fiche : nom professionnel, photo consentie, biographie, expérience déclarée/vérifiée, catégories,
+    langues, zones desservies, spécialités, type de transmission, établissement de rattachement,
+    véhicule, tarifs, conditions, disponibilités et avis vérifiés.
+   Filtres : commune, proximité consentie, prix, date, langue, catégorie de permis, véhicule, note,
+    spécialité et statut de vérification.
+   Ne jamais publier CNI, permis, documents d’assurance ou coordonnées privées ; afficher un
+    badge de vérification contextualisé.
+   Classement explicable : pertinence, distance, disponibilité, qualité de service ; signaler toute
+    mise en avant sponsorisée.
+
+7.2 Parcours apprenant
+Créer un compte → préciser objectifs et prérequis → rechercher → consulter fiche et conditions →
+sélectionner prestation et créneau → choisir rendez-vous admissible → voir prix total → payer →
+recevoir confirmation → contrôler identité/véhicule → suivre séance → confirmer prestation →
+évaluer et consulter bilan.
+
+7.3 Parcours moniteur / auto-école
+Créer compte professionnel → déclarer statut → téléverser pièces → contrôle humain → approbation
+conditionnelle → abonnement professionnel → publier prestations/tarifs → gérer calendrier →
+recevoir demandes → réaliser séance → établir compte rendu → recevoir règlement et gérer
+avis/litiges. Pour les auto-écoles : gérer rattachements, véhicules, moniteurs et élèves autorisés.
+
+
+
+
+                   DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+7.4 Règles de réservation
+     Créneaux disponibles, réservation temporaire avec expiration, prévention atomique des
+      conflits, durée et temps de déplacement configurables.
+     Deux modes : confirmation immédiate si autorisée ou demande soumise à acceptation avec
+      expiration.
+     États : brouillon, en attente, paiement en cours, confirmée, en réalisation, terminée, contestée,
+      annulée, remboursée, non-présentation.
+     Report soumis à accord et disponibilité ; notifications push/SMS/e-mail selon consentement.
+     Début/fin de cours par code partagé ; validation manuelle contrôlée en cas d’incident technique ;
+      compte rendu après séance.
+     Aucun moniteur ou véhicule suspendu, expiré ou non habilité ne peut recevoir de nouvelles
+      réservations.
+
+7.5 Paiement et remboursements
+     Paiements via prestataire habilité Mobile Money/cartes ; confirmation exclusivement par
+      notification serveur authentifiée et idempotente.
+     Prix détaillé avant achat : montant du prestataire, frais de plateforme, taxes/frais applicables,
+      politique d’annulation.
+     Reversement et éventuelle conservation temporaire des fonds organisés uniquement dans un
+      schéma légalement autorisé avec prestataire agréé.
+     Gestion des remboursements partiels/totaux, chargebacks, échecs, doublons, annulations, litiges
+      et rapprochement comptable.
+     Conditions contractuelles et règles des stores : distinguer prestations physiques et abonnements
+      numériques.
+
+
+
+8. Sécurité physique, confiance et conformité
+     Contrôler habilitation des auto-écoles et moniteurs, catégorie de permis, assurances et
+      conformité des véhicules, équipements d’enseignement requis ; consulter un juriste/autorité
+      compétente avant publication.
+     Vérification initiale, suivi des expirations, contrôles périodiques, suspension, recours et
+      traçabilité des décisions.
+     Identité du prestataire contractuel, véhicule et lieu de rendez-vous indiqués à la réservation.
+     Code de présence, assistance, signalement, gestion des absences et des incidents ; pas de
+      géolocalisation continue par défaut.
+     Protection renforcée des mineurs : âge minimum, consentement du représentant légal, règles de
+      contact et admissibilité à la conduite.
+     Avis uniquement après prestation vérifiée ; détection des faux avis et procédure de contestation.
+     Confidentialité : accès par rôle, chiffrement en transit/au repos selon sensibilité, rétention
+      limitée, suppression/accès, sauvegardes et journal d’audit.
+     Aucun affichage suggérant que DRIVE ACADEMY AI délivre un permis ou exerce elle-même
+      comme auto-école.
+
+
+
+9. Modèle économique — hypothèses à tester
+    Offre                             Prix indicatif                     Observation
+
+    Découverte                        Gratuit                            Cours et quiz limités
+
+
+
+                    DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+    Premium                             1 500 F CFA/mois                  Cours complets, examens,
+                                                                          suivi
+    Conduite Pro numérique              3 000 F CFA/mois                  Simulation avancée / IA selon
+                                                                          coûts
+    Pass examen                         5 000 F CFA / 90 jours            Préparation intensive
+    Moniteur Actif                      5 000 F CFA/mois                  Profil et calendrier
+    Moniteur Pro                        10 000 F CFA/mois                 Outils professionnels
+    Auto-école Business                 35 000 F CFA/mois                 Gestion multi-moniteurs
+    Réservation pratique                Frais de service indicatifs 8 %   Transparence et test marché
+
+Les frais de plateforme ne sont pas une garantie de chiffre d’affaires net. Vérifier coûts de paiement,
+impôts, commissions, acquisition, hébergement et support. Les packs de cours doivent préciser le
+vendeur contractuel et les modalités de remboursement.
+
+
+
+10. Architecture technique cible
+    Couche                                               Choix cible
+
+    Application mobile                                   Flutter / Dart, Android d’abord
+    Portails professionnels                              Web responsive, Laravel + Filament ou
+                                                         équivalent
+    API métier                                           Laravel PHP, API versionnée, contrôle d’accès
+    Données                                              MySQL 8, migrations et sauvegardes
+    Cache/queues                                         Redis ou alternative selon charge
+    Simulation                                           Scénarios 2D dans Flutter ; étude Godot/Unity
+                                                         pour 3D
+    IA                                                   Service séparé, corpus réglementaire validé et
+                                                         garde-fous
+    Fichiers sensibles                                   Stockage objet privé, liens temporaires
+    Notifications                                        Push, e-mail, SMS selon fournisseurs
+    Paiements                                            Prestataire agréé, webhooks signés,
+                                                         rapprochement
+    Déploiement                                          VPS Linux/Docker, HTTPS, CI/CD, supervision
+
+
+10.1 Principales entités de données
+users, roles, user_roles, countries, road_rules, rule_versions, courses, lessons, road_signs, questions,
+question_options, exam_attempts, learning_progress, scenarios, scenario_events,
+simulation_sessions, organizations, organization_members, instructor_profiles,
+instructor_credentials, instructor_affiliations, instructor_vehicles, driving_services, availability_slots,
+booking_holds, driving_bookings, booking_events, driving_sessions, reviews, subscriptions,
+payment_transactions, refunds, payouts, safety_reports, consent_records, audit_logs.
+
+10.2 API indicative
+        GET /v1/courses, /road-signs, /questions ; POST /exam-attempts ; GET /me/progress
+        GET /v1/instructors?city=&category=&date= ; GET /instructors/{id} ; GET /instructors/{id}/slots
+        POST /v1/bookings/holds ; POST /bookings ; GET /bookings/{id} ; POST /bookings/{id}/cancel
+        POST /v1/payments/intents ; POST /webhooks/payments (authentifié, idempotent)
+
+                     DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+     POST /v1/instructor/credentials ; PATCH /instructor/availability ; POST /sessions/{id}/complete
+     POST /v1/reports ; POST /reviews ; GET /admin/verifications ; POST
+      /admin/verifications/{id}/decision
+
+
+
+11. Exigences non fonctionnelles
+     Accessibilité : textes lisibles, contrastes, audio facultatif, navigation claire et faible
+      consommation de données.
+     Disponibilité cible initiale à convenir (ex. 99,5 % hors maintenance) ; surveillance, alertes,
+      reprise et sauvegardes testées.
+     Performance : pagination des recherches, cache des contenus, opérations de paiement et
+      réservation résilientes aux retries.
+     Sécurité : MFA administrateurs, moindre privilège, validation serveur, protection anti-abus,
+      tests d’intrusion avant commercialisation.
+     Observabilité : logs structurés sans données sensibles, métriques et traçage des
+      réservations/paiements.
+     Localisation : règles et contenus par pays, devise et fuseau horaire ; français initial, anglais
+      ensuite.
+
+
+
+12. Parcours d’administration et gouvernance
+Administration : gestion du catalogue, publication après revue, approbation des professionnels,
+gestion des pièces et expirations, modération des avis, suivi des litiges, remboursement selon
+permissions, tableaux de bord et journal des actions. Séparer les pouvoirs de validation, de
+paiement et d’administration système lorsque possible.
+
+
+
+13. Critères d’acceptation prioritaires
+     Un apprenant peut compléter une leçon et retrouver sa progression après reconnexion.
+     Chaque question réglementaire est liée à un pays, une source et une version validée.
+     Un moniteur non approuvé n’apparaît pas dans la recherche et ne peut accepter de paiement.
+     Deux utilisateurs ne peuvent confirmer simultanément le même créneau.
+     Un webhook de paiement répété ne crée ni deuxième réservation ni double reversement.
+     Une réservation annulée applique la politique affichée et génère une trace auditable.
+     Un avis ne peut être créé que pour une séance terminée et vérifiée.
+     L’expiration d’une habilitation bloque les nouvelles prestations sans effacer l’historique.
+     Le simulateur affiche clairement qu’il ne remplace pas une formation pratique réelle.
+     Les pages publiques et contrats comportent la mention de non-substitution à une auto-école.
+
+
+
+14. Roadmap et jalons
+    Lot                                 Livrables                           Validation
+
+    0 — cadrage                         Audit juridique, programme          Go/no-go conformité
+                                        officiel, maquettes, choix
+                                        paiement
+    1 — socle                           Comptes, cours, panneaux,           Tests pédagogiques
+                                        quiz, admin
+
+
+                   DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+ 2 — Connect                        Vérification moniteurs, profils,   Contrôle habilitations
+                                    recherche, calendrier
+ 3 — transactionnel                 Paiements, réservation,            Tests bout en bout
+                                    remboursements, litiges
+ 4 — pilote                         Android bêta, partenaires,         Retours terrain
+                                    support, mesures
+ 5 — enrichissement                 Scénarios 2D, IA, offres           Qualité et sécurité
+                                    entreprises
+ 6 — 3D                             Prototype, optimisation,           Performance appareils
+                                    déploiement progressif
+
+Durées indicatives : cadrage 3–5 semaines ; socle 6–10 semaines ; Connect et transactions 8–14
+semaines ; pilote 4–6 semaines ; simulateur 3D 3–6 mois ou davantage. Les jalons dépendent de
+l’équipe, des contenus et des autorisations.
+
+
+
+15. Budget indicatif et risques
+MVP pédagogique : 3,1 à 8,6 M F CFA ; ajout DRIVE CONNECT : 2,5 à 6,5 M F CFA ; enveloppe
+combinée indicative : 5,6 à 15,1 M F CFA, hors 3D avancée, frais juridiques, coûts récurrents et
+commercialisation. Simulation 3D avancée : 5 à 20 M F CFA ou davantage selon périmètre.
+Estimations non contractuelles à confirmer par devis.
+
+ Risque                                              Réponse
+
+ Indépendants non habilités                          Blocage de publication jusqu’à preuve légale
+ Contenus inexacts                                   Sources officielles et revue humaine
+ Litiges/accidents                                   Contrats, assurance, signalements, procédure
+ Fraude paiement                                     Webhooks vérifiés, rapprochement,
+                                                     idempotence
+ Coût IA/3D                                          Quotas, prototype, lancement progressif
+ Faible adoption                                     Pilote avec auto-écoles et apprenants
+ Données sensibles                                   Minimisation, contrôle d’accès, audits
+
+
+
+
+16. Mentions obligatoires et clauses de communication
+Mention courte : « DRIVE ACADEMY AI accompagne votre apprentissage de la conduite. La
+plateforme ne remplace pas une auto-école agréée. »
+
+Mention longue : « DRIVE ACADEMY AI fournit des contenus pédagogiques, des outils de simulation
+et un service de mise en relation avec des professionnels habilités. DRIVE ACADEMY AI ne se
+substitue pas à une auto-école agréée, ne dispense pas elle-même les formations réglementaires de
+conduite et ne délivre pas de permis de conduire. Les cours pratiques relèvent des professionnels ou
+établissements identifiés au moment de la réservation. »
+
+À afficher sur : accueil, inscription, cours, simulateur, profils moniteurs, parcours de réservation,
+CGU/CGV, contrats partenaires et communications commerciales pertinentes.
+
+
+
+
+                 DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+17. Points ouverts avant développement commercial
+   Confirmer les textes ivoiriens applicables à l’enseignement de la conduite et au statut de
+    moniteur indépendant.
+   Définir précisément les responsabilités contractuelles, assurances, âge minimum et protection
+    des mineurs.
+   Choisir le prestataire de paiement et valider les flux de fonds et remboursements.
+   Constituer et faire valider le référentiel du Code de la route ivoirien.
+   Interroger 5–10 auto-écoles et un échantillon d’apprenants pour valider prix, besoins et
+    opérations.
+   Valider les maquettes, le backlog P0 et les critères d’acceptation avant chiffrage final.
+
+FIN — Document de cadrage évolutif. Toute extension à un autre pays requiert une revue
+réglementaire et pédagogique locale.
+
+
+
+
+                  DRIVE ACADEMY AI • Cahier des charges V3.0 • Document de travail
+

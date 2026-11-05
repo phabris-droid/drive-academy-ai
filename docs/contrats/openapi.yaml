@@ -1,0 +1,29 @@
+openapi: 3.1.0
+info:
+  title: DRIVE ACADEMY AI API
+  version: 0.1.0-draft
+  description: Squelette issu du CDC §10.2 — à compléter par l'agent `architecte` (story L0-01).
+servers:
+  - url: /api/v1
+paths:
+  /courses: { get: { summary: Liste des cours publiés du pays courant, responses: { '200': { description: OK } } } }
+  /road-signs: { get: { summary: Panneaux (recherche, filtres), responses: { '200': { description: OK } } } }
+  /questions: { get: { summary: Tirage de questions par thème/difficulté, responses: { '200': { description: OK } } } }
+  /exam-attempts: { post: { summary: Soumettre un examen blanc, responses: { '201': { description: Créé } } } }
+  /me/progress: { get: { summary: Progression de l'apprenant, responses: { '200': { description: OK } } } }
+  /instructors: { get: { summary: Recherche moniteurs publiables (city, category, date), responses: { '200': { description: OK } } } }
+  /instructors/{id}: { get: { summary: Fiche publique moniteur, responses: { '200': { description: OK } } } }
+  /instructors/{id}/slots: { get: { summary: Créneaux disponibles, responses: { '200': { description: OK } } } }
+  /bookings/holds: { post: { summary: Réservation temporaire (Idempotency-Key requis), responses: { '201': { description: Créé }, '409': { description: Créneau indisponible } } } }
+  /bookings: { post: { summary: Créer une réservation (Idempotency-Key requis), responses: { '201': { description: Créé } } } }
+  /bookings/{id}: { get: { summary: Détail réservation, responses: { '200': { description: OK } } } }
+  /bookings/{id}/cancel: { post: { summary: Annuler selon politique figée, responses: { '200': { description: OK } } } }
+  /payments/intents: { post: { summary: Intention de paiement, responses: { '201': { description: Créé } } } }
+  /webhooks/payments: { post: { summary: Webhook prestataire signé et idempotent, responses: { '200': { description: OK } } } }
+  /instructor/credentials: { post: { summary: Dépôt de pièces justificatives, responses: { '201': { description: Créé } } } }
+  /instructor/availability: { patch: { summary: Mise à jour des disponibilités, responses: { '200': { description: OK } } } }
+  /sessions/{id}/complete: { post: { summary: Clôturer une séance, responses: { '200': { description: OK } } } }
+  /reports: { post: { summary: Signalement / incident, responses: { '201': { description: Créé } } } }
+  /reviews: { post: { summary: Avis sur séance terminée vérifiée, responses: { '201': { description: Créé } } } }
+  /admin/verifications: { get: { summary: File de vérification, responses: { '200': { description: OK } } } }
+  /admin/verifications/{id}/decision: { post: { summary: Décision motivée, responses: { '200': { description: OK } } } }
